@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form</title>
+</head>
+
+<body style="background-color: red; background-image: url(aaaa.jpg)">
+  <form style="
+        border: 4px dashed;
+        text-align: center;
+        border-radius: 5%;
+        padding-top: 5px;
+        margin: 10%;
+        border-color: rgb(72, 0, 255);
+        color: #fff;
+        background-color: rgba(255, 170, 0, 0.979);
+        font-weight: 700;
+      ">
+    <div>
+      <label for="name">Name:<input type="text" id="name" placeholder="Enter Name" required
+          autocomplete="off" /></label>
+      <br /><br />
+    </div>
+    <div>
+      <label for="contact">Phone no.:
+        <input type="tel" id="contact" maxlength="10" placeholder="Enter Phone no." /></label>
+      <br /><br />
+    </div>
+    <div>
+      <label for="email">Email:<input type="text" id="email" placeholder="Enter Email" /></label>
+      <br /><br />
+    </div>
+    <label for="age">Date of birth: <input type="date" id="age" /></label>
+    <br /><br />
+    <div>
+      <label for="sugg">Sugesstion:<input type="text" id="sugg" /></label>
+      <br /><br />
+    </div>
+    <label for="file">upload a file:</label>
+    <input type="file" name="file" id="file" />
+    <br /><br />
+
+    Gender:
+    <label for="male">Male</label>
+    <input type="radio" id="male" value="male" name="gender" />
+
+    <label for="female">Female</label>
+    <input type="radio" id="female" value="female" name="gender" />
+
+    <br /><br />
+    <label for="pass">Password:
+      <input type="password" id="pass" placeholder="Enter password" /></label>
+    <br /><br />
+
+    <label for="place">Choose your city: </label>
+    <input list="place" placeholder="List open kro" />
+    <datalist id="place">
+      <option value="Jalandhar"></option>
+      <option value="Puranpur"></option>
+      <option value="Agra"></option>
+      <option value="Amritsar"></option>
+    </datalist>
+    <br /><br />
+
+    <label for="number">Input length: </label>
+    <input type="number" id="number" placeholder="Enter length" />
+    <br /><br />
+
+    <input type="submit" />
+    <br /><br />
+  </form>
+</body>
+
+</html>
